@@ -1,1 +1,1 @@
-# python_project
+# Basic python_project and practices
