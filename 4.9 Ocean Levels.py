@@ -3,8 +3,6 @@
 # create an application that displays the number of millimeters that the ocean will 
 # have risen each year for the next 25 years.
 
-# Initialize the total ocean level
-
 print("\nYear             Ocean Level(mm)")
 print("="*40)
 

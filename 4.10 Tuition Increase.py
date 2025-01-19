@@ -4,6 +4,7 @@
 # 5 years. Write a program with a loop that displays the projected semester tuition 
 # amount for the next 5 years.
 
+
 print("\nYear      Tuition / Semester")
 print("-" * 30)
 
