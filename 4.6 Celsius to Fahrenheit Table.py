@@ -8,24 +8,13 @@
 # where F is the Fahrenheit temperature, and C is the Celsius temperature. Your program 
 # must use a loop to display the table.
 
+print("\nCelsius          Fahrenheit")
+print("-" * 30)
 
+for celsius in range(0, 21):
+    fahrenheit = 9 * celsius / 5 + 32
 
+    print(f"{celsius:<10} {fahrenheit:>10.1f}") 
+    
+print("-" * 30)
 
-
-
-
-
-
-
-
-
-
-
-
-# print("Celsius          Fahrenheit")
-# print("-" * 30)
-
-# for celsius in range(0, 21):
-#     fahrenheit = 9 * celsius / 5 + 32
-
-#     print(f"{celsius:<10} {fahrenheit:>10.1f}") 
