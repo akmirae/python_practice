@@ -1,0 +1,33 @@
+# 7.3. Rainfall Statistics
+# Design a program that lets the user enter the total rainfall for each of 12 months 
+# into a list. The program should calculate and display the total rainfall for the year,
+# the average monthly rainfall, the months with the highest and lowest amounts.
+
+def average_rainfall():
+    rainfalls = []
+    
+    for month in range(1, 13):
+        while True:
+            try:                
+                monthly_rainfall = int(input(f"Enter the rainfall of the month {month}: "))
+                if monthly_rainfall < 0:
+                    print("Rainfall cannot be negative. Please try again.")
+                    continue
+                rainfalls.append(monthly_rainfall)
+                break
+            except ValueError:
+                print("Invalid input. Please enter a numeric value.")
+                
+    total_rainfalls = sum(rainfalls)
+    highest_rainfalls = max(rainfalls)
+    lowest_rainfalls = min(rainfalls)
+    
+    highest_month = rainfalls.index(highest_rainfalls) + 1
+    lowest_month = rainfalls.index(lowest_rainfalls) + 1
+    
+    print(f"The Total rainfalls for the year: {total_rainfalls:,}")
+    print(f"The average monthly rainfall: {total_rainfalls / 12:,.2f}")
+    print(f"Month with highest rainfall: Month {highest_month} ({highest_rainfalls:,.2f})")
+    print(f"Month with lowest rainfall: Month {lowest_month} ({lowest_rainfalls:,.2f})")
+
+average_rainfall()
